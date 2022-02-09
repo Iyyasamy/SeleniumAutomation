@@ -53,7 +53,7 @@ public class FetchAppsRating {
     // method to return the app rating from store
     public String getAppRating(String appName, String storeLink) {
         String rating = "N/A";
-        int currentPage = 1, maxPage = 3;
+        int currentPage = 0, maxPage = 3;
         driver.findElement(By.xpath("//table[@role='presentation']//tr/td[2]")).click();
         do {
             try {
